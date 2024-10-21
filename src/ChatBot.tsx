@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 const StaticChatbot = () => {
   const [isOpen, setIsOpen] = useState(false); // Track if the chatbot is open or not
@@ -16,7 +16,7 @@ const StaticChatbot = () => {
     setMessages([...messages, { sender: "user", text: message }]);
 
     // Here you can add API calls if needed
-    const predefinedResponses = {
+    const predefinedResponses: any = {
       hello: "Hi! How can I assist you today?",
       help: "I'm here to help! What do you need assistance with?",
       default: "Sorry, I didn't understand that.",
